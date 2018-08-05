@@ -20,8 +20,8 @@
               - Medium        >992px    970px // fixed at 970px
               - Large         >1200px   1170px // fixed at 1170px
 
-0201
-  - Rows
+0202
+  - Working with Rows
     - Allows you to make Horizontal groups of columns
     - Place within container
     - Should always include columns
