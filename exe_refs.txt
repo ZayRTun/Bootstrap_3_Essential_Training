@@ -1,0 +1,272 @@
+0201
+  - Understanding Bootstrap containers 
+  - B Grid System
+    - 12-column Grid
+    - Accessed througn CSS classes
+    - Three key concepts
+      - containers
+      - rows
+      - columns
+      - Bootstrap containers
+        - Control layout
+        - Adds 15px of padding on each side of the element
+        - Two types of containers
+          - Fluid // class="container-fluid"
+          - Fixed-Width // class="container"
+            - 15px padding on each side
+            - Adjusts to media query breakpoints
+              - Extra Small   <768px    Auto // full width of browser
+              - Small         >768px    750px // fixed at 750px
+              - Medium        >992px    970px // fixed at 970px
+              - Large         >1200px   1170px // fixed at 1170px
+
+0201
+  - Rows
+    - Allows you to make Horizontal groups of columns
+    - Place within container
+    - Should always include columns
+    - Adding a row gets rid of container padding using negitive margins
+
+0204
+  - Columns
+    - 30px gutters
+      - 15px on each side of the column
+    - Use col-SIZE-SPAN // col-md-6
+      - Size: When it stacks
+      - Span: How many columns
+    - More than 12 columns will wrap
+
+    - Column Metrics:
+      -             Extra small     Small       Medium      Large
+      - Container   Auto            750px       970px       1170px
+      - Size        .col-xs-        .col-xs-    .col-md-    .col-lg-
+      - Col-Width   Auto            ~62px       ~81px       ~97px
+  
+0205
+  - Resetting columns
+    - Responsive Utility classes
+      - class="visible-sm-block">
+
+0206
+  - Offsetting columns
+
+0207
+  - Nesting columns
+
+0208
+  - Customizing column order with push and pull
+    - col-xs-push-1 / col-xs-pull-1
+
+0301
+  - Styling headings and body copy
+    - <div class="h1">Same As HTML h1</div>
+    - <small>Secondary Text</small>
+    - <p class="lead">Lead text</p>
+
+0302
+  - Analyzing inline text styles
+    - <mark>To highlight a text</mark>
+    - <s>To strike thru text</s>
+    - <del>Delete/del tag used here</del>
+
+0303
+  - Modify alignment transformation and abbreviation
+    -Alignment Classes
+      - <p class="text-left">
+      - <p class="text-right">
+      - <p class="text-center">
+      - <p class="text-justify">
+      - <p class="text-nowrap">
+    -Transformation Classes 
+      - <h1 class="text-lowercase">Headline</h1>
+      - <h1 class="text-uppercase">Headline</h1>
+      - <h1 class="text-capitalize">headline one</h1>
+    - Abbreviation
+      - <abbr title="Captain">Capt.</abbr>
+      - <abbr title="United States Air Force" class="initialism">USAF</abbr>
+
+0304
+  - Using blockquotes
+    - <blockquote class="blockquote-reverse">
+      Paragraph here
+      Footer here
+      </blockquote>
+
+0305
+  - Working with list styles
+    - <ol class="list-unstyled"> // removes list style
+    - <ul class="list-inline"> // list in a row
+    - <dl class="dl-horizontal"> // for horizontal definations at 750px breakpoints
+
+0306
+  - Styling code
+    - <code>&lt;em&gt;</code> // code tag
+    - <kbd>control-c</kbd> // control combination using keyboard tag
+    - <var>e</var> // to provide symentic data to search engine
+    - <samp></samp> // for sample output
+    - <pre class="pre-scrollable"> // for long script with scroll
+
+0401
+  - Working with Bootstrap buttons
+  - Check the exe files for details
+
+0402
+  - Exploring table styles
+    - Table bs3 styles
+      - <table class="table"> // bs3 table just add the class
+      - <table class="table table-striped"> // bs3 striped table
+      - <table class="table table-bordered"> // to add border
+      - <table class="table table-hover"> // adds hovering effect long tables
+      - <table class="table table-condensed"> // for less space
+      - <div class="table-responsive"> // add a scroll bar
+
+0403
+  - Adding image classes
+    - Classes 
+      - img-responsive
+      - center-block
+      - img-rounded // rounded edge
+      - img-circle
+      - img-thumbnail
+        - <img class="img-responsive" // 100% width of parent column, height: auto, display: block
+        - <img class="img-responsive center-block" // to center within block
+    
+0404
+  - Understanding Bootstrap helper classes
+    - Bs3 Helper classes for text
+      - text-muted
+      - text-primary
+      - text-success
+      - text-info
+      - text-warning
+      - text-danger
+    - Bs3 Helper classes for background
+      - bg-primary
+      - bg-success
+      - bg-info
+      - bg-warning
+      - bg-danger
+    - Bs3 Helper classes for images
+      - pull-left
+    - Bs3 other Helper classes
+      - show / hide
+      - invisible // leaves the elements place
+      - sr-only // to only show on screen reader devices
+      - text-hide // hides text only
+
+0405
+  - Using responsive utilities
+  - Allows to show or hide objects/Paragraph/img depending on breakpoints
+    - Visibility at breakpoints/print
+    - VISIBILITY-SIZE(-DISPLAY)
+      - Visibility: visible or hidden
+      - Size: xs, sm, md, lg, print
+      - Display: block, inline, inline-block, print
+
+0501
+  - Creating a basic form
+    - sr-only // will only show on screen readers
+
+    - <input class="form-control" // 100% width responsive
+
+0502
+  - Formatting radio and checkbox controls
+
+0503
+  - Using inline forms
+    - Only works on Large screen size
+
+0504
+  - Styling a horizontal form 
+    - <form class="form-horizontal">
+        <label class="col-sm-2 control-label"           for="inputName">Name</label>
+
+0505
+  - Using validation styles
+    - <form>
+        <div class="form-group has-warning"> // yellow border
+        <div class="form-group has-error"> // red border
+        <div class="form-group has-success"> // green border
+
+    - For labels to have effect, add: class="control-label"
+      - <label class="control-label" for="inputName">Name</label>
+
+    - To add icons for visual feedback
+      - <div class="form-group has-success has-feedback">
+
+    - To hide icons for disabled people add: aria-hidden="true"
+      - <div class="form-group has-success has-feedback" aria-hidden="true">
+
+    - For screen readers add:
+    <input class="form-control" type="text" 
+      id="inputName" placeholder="Name" aria-describedby="nameStatus">
+    <span class="sr-only" id="nameStatus">(success)</span>
+
+    - Visit http://glyphicons.com and halflings tab for bs3 icons
+
+0506
+  - Using input groups
+    - <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input class="form-control" type="text"
+
+  - Search Bar using Input group
+    - <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-primary">Search</button>
+
+0507
+  - Using miscellaneous styles and sizing
+    - To disable an input field add: disabled
+      - input class="form-control" type="text" id="inputName" placeholder="Name" disabled>
+
+    - To disable a checkbox div
+      <div class="checkbox disabled"> // to disable a  checkbox label
+        <label>
+          <input id="inputAddList"
+            type="checkbox" disabled>Add me to e-mail blast
+        </label>
+
+    - Fieldset // allows u to group a certain section of a form
+
+      - <form class="form-horizontal">
+          <fieldset>
+            <legend>Form Sec Title</legend>
+
+              <div class="form-group">
+                  <label class="col-sm-2 control-label"
+                    for="inputName">Name</label>
+                  <div class="col-sm-10">
+                  <input class="form-control" type="text"
+                    id="inputName" placeholder="Name" disabled>
+
+      - Disable a fieldset section
+        - <fieldset disabled> // add the disabled attribute
+
+      - Read Only form field add: readonly // attribute
+        - <input class="form-control" type="text" id="inputName" placeholder="Name" value="Read Only" readonly>
+
+      - Read Only form Paragraph: class="form-control-static"
+          <p class="form-control-static">Zay Yar Tun</p>
+
+0508
+  - Using Icons
+
+0601
+  - Creating a Dropdown
+    - <div class="dropdown"> // wrap all dd content within
+
+0602
+  - Using button groups
+
+0603
+  - Understanding Bs3 nav components
+    <div class="container">
+      <div class="row">
+        <section class="col-xs-12">
+          <ul class="nav nav-tabs">
+
+0604
+  -
