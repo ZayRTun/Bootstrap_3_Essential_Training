@@ -27,28 +27,45 @@
     - Should always include columns
     - Adding a row gets rid of container padding using negitive margins
 
-0204
-  - Columns
-    - 30px gutters
-      - 15px on each side of the column
+0203
+  - Creating Columns
+    - Columns
+      - 30px gutters
+        - 15px on each side of the column
+
     - Use col-SIZE-SPAN // col-md-6
       - Size: When it stacks
       - Span: How many columns
+
     - More than 12 columns will wrap
 
     - Column Metrics:
       -             Extra small     Small       Medium      Large
-      - Container   Auto            750px       970px       1170px
-      - Size        .col-xs-        .col-xs-    .col-md-    .col-lg-
-      - Col-Width   Auto            ~62px       ~81px       ~97px
-  
+                    <768px          >768px      >992px      >1200px
+
+        Container   Auto            750px       970px       1170px
+        Size        .col-xs-        .col-sm-    .col-md-    .col-lg-
+        Col-Width   Auto            ~62px       ~81px       ~97px
+
+0204
+  - Using multiple column classes
+
+
 0205
   - Resetting columns
     - Responsive Utility classes
-      - class="visible-sm-block">
+    - Clearfix class:
+      - class="clearfix visible-sm-block">
+      - class="clearfix visible-sm-inline-block">
+      - class="clearfix visible-sm-inline-block">
+      - class="clearfix hidden-md">
+      Note: These Utility classes are useful in hiding imgs at specific breakpoints
 
 0206
   - Offsetting columns
+    - Classes
+      col-xs-offset-3
+      col-sm-offset-0 // Clearing xs offset at sm breakpoint
 
 0207
   - Nesting columns
