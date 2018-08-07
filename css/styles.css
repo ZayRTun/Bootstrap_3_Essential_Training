@@ -1,59 +1,63 @@
 
 
-.bgimage {
-  background-image: url('../images/reptiles.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 200px;
-}
+/*.bgimage {*/
+  /*background-image: url('../images/reptiles.jpg');*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
+  /*height: 200px;*/
+/*}*/
 
-.icon {
-  max-width: 150px;
-  margin: 0 auto;
-  display: block;
-}
+/*.icon {*/
+  /*max-width: 150px;*/
+  /*margin: 0 auto;*/
+  /*display: block;*/
+/*}*/
 
-.nav_header {
-  background-color: #a6e1ec;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav_header > h1 {
-  margin-top: 0;
-}
+/*.nav_header {*/
+  /*background-color: #a6e1ec;*/
+  /*height: 100px;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+/*}*/
+/*.nav_header > h1 {*/
+  /*margin-top: 0;*/
+/*}*/
 
-.services section {
-  text-align: center;
-}
+/*.services section {*/
+  /*text-align: center;*/
+/*}*/
 
-/* Media Queries */
-@media (min-width: 1200px) {
-  h3 {
-    margin-top: 0;
-  }
+/*!* Media Queries *!*/
+/*@media (min-width: 1200px) {*/
+  /*h3 {*/
+    /*margin-top: 0;*/
+  /*}*/
 
-  .services section {
-    text-align: left;
-    min-height: 85px;
-  }
-}
+  /*.services section {*/
+    /*text-align: left;*/
+    /*min-height: 85px;*/
+  /*}*/
+/*}*/
 
-@media (max-width: 767px) {
-  .img-responsive {
-    max-width: 50%;
-    min-width: 300px;
-  }
-}
+/*@media (max-width: 767px) {*/
+  /*.img-responsive {*/
+    /*max-width: 50%;*/
+    /*min-width: 300px;*/
+  /*}*/
+/*}*/
 
-.imghead {
-  background-image: url(../images/field_head.jpg);
-  background-position: bottom center;
-  background-size: cover;
-  height: 300px;
-}
+/*.imghead {*/
+  /*background-image: url(../images/field_head.jpg);*/
+  /*background-position: bottom center;*/
+  /*background-size: cover;*/
+  /*height: 300px;*/
+/*}*/
 
-.form-inline {
-  text-align: center;
+/*.form-inline {*/
+  /*text-align: center;*/
+/*}*/
+
+.navbar-default {
+  border: none;
 }

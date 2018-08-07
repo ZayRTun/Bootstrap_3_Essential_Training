@@ -286,4 +286,61 @@
           <ul class="nav nav-tabs">
 
 0604
+  - Adding content to navbar
+    - Navbar-Header
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header"> // Navbar Header
+            <a href="#" class="navbar-brand">
+              Wisdom Pets
+            </a>
+          <p class="navbar-text">pet loving care</p> // Navbar Text
+          </div>
+
+    - Navbar Button
+      button type="button" class="btn btn-default navbar-btn">sign in</button>
+
+    - Navbar Form 
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            // Title here
+          </div>
+          <ul class="nav navbar-nav">
+            // Link list here
+          </ul>
+            // Form goes below here
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <button class="btn btn-default" type="submit">Go</button>
+
+    - Dropdown Menu
+      - Add Classes: dropdown-toggle & data-toggle="dropdown"
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Exotic Pets</a></li>
+            <li><a href="#">Grooming</a></li>
+            <li><a href="#">General Health</a></li>
+          </ul>
+
+0605
+  - Collapsing your navigation
+    - Wrap all nav links with a div with class:
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+
+    - Then within Navbar-Header create a button with classes:
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+0606
+  - Using breadcrumbs and pagination styles
+
+0701
   -
