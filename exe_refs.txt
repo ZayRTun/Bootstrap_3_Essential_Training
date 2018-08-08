@@ -343,4 +343,22 @@
   - Using breadcrumbs and pagination styles
 
 0701
-  -
+  - Creating a Jumbotron and page header
+    - Class: page-header
+      <div class="content container">
+        <div class="row">
+          <section class="col-sm-12">
+            <div class="page-header"> // adds padding and underline
+              // Header Content here
+
+0702
+  - Working with labels and badges
+    - Labels:
+      <h4>Title Here <span class="label label-default">new</span></h4> // label size will be inherited from its parent tag
+
+    - Badges:
+        <span class="badge">4</span> // gets its color from parent
+          e.g.
+          <a href="#">read articles <span class="badge">4</span></a>
+          e.g.
+          <button class="btn btn-primary navbar-btn">inbox  <span class="badge">4</span></button>
