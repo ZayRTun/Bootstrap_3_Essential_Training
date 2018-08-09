@@ -72,3 +72,11 @@
   background-size: cover;
   color: cornsilk;
 } */
+
+.thumbnail {
+  min-height: 450px;
+}
+
+.media img {
+  width: 125px;
+}

@@ -362,3 +362,55 @@
           <a href="#">read articles <span class="badge">4</span></a>
           e.g.
           <button class="btn btn-primary navbar-btn">inbox  <span class="badge">4</span></button>
+
+0703
+  - Using the thumbnail style 
+    <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <div class="thumbnail"> // Using a thumbnail class here
+        <img src="images/exoticpets.jpg" alt="Exotic Pets Photo">
+        <div class="caption"> // Using a caption class here
+          <h3>Exotic Pets</h3>
+          <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+          <a class="btn btn-info" href="#">more info</a>
+        </div>
+      </div>
+    </div>
+
+0704
+  - Adding media styles
+    - div class="media"> // Class: media
+        <div class="media-left"> // Class: media-left
+          <a href="#"><img class="media-object" //Class: media-object src="images/vaccinations.jpg"
+            alt="Vaccinations Photo"></a>
+        </div>
+        <div class="media-body">  // Class: media-body
+          <h3 class="media-heading">Vaccinations</h3> // media-heading
+          <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>   
+        </div>
+      </div>
+
+      Other Classes: media-right, 
+
+0705
+  - Flowing video with responsive embeds
+    - <div class="col-xs-6 col-sm-4">
+        <div class="embed-responsive embed-responsive-4by3">
+          <video class="embed-responsive-item" src="video/brushing.mp4" autoplay controls muted></video>
+        </div>
+        <h3>Grooming</h3>
+        <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+      </div>
+
+0801
+  - Styling list groups
+    - <ul class="list-group">
+        <li class="list-group-item">Cally Reynolds <span class="badge">14</span></li>
+        // List group with header and content
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Nash Vasquez</h3>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+
+0802
+  -
