@@ -413,4 +413,25 @@
           </a>
 
 0802
-  -
+  - Working with panels
+    
+0803
+  - Using Wells
+    - <div class="well well-lg"></div> // add well-lg for added indentation
+
+0901
+  - Creating a carousel
+    - jQuery controls
+      $(function() {
+        $('.carousel').carousel({
+          interval: 2000, // 0/false
+          pause: false, // default: pause on hover / if false no pause
+          wrap: false, // will stop at last slide
+          keyboard: false // default: true
+        });
+      });
+
+
+0902
+  - Creating modals
+  here now

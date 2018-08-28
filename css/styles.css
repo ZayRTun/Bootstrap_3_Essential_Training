@@ -80,3 +80,15 @@
 .media img {
   width: 125px;
 }
+
+/* ------Styles for Carousel--------- */
+
+.carousel-inner .item {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-inner .item img {
+  visibility: hidden;
+}
